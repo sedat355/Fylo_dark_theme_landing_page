@@ -4,6 +4,19 @@
     padding: 0;
     list-style-type: none;
 }
+:root {
+    --bg-btn: hsl(217, 28%, 15%);
+    --bg-main: hsl(218, 28%, 13%);
+    --bg-footer: hsl(216, 53%, 9%);
+    --bg-testimonials: hsl(219, 30%, 18%);
+
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --light-red: hsl(0, 100%, 63%);
+    --white:  hsl(0, 0%, 100%);
+}
+
+/* ! =======GENERAL STYLES========================= */
 button {
     border: none;
     outline: none;
@@ -16,8 +29,44 @@ a {
 h1, h2, h3,h4, button, header a {
     font-family: 'Raleway', sans-serif;
 }
+img {
+    max-width: 100%;
+}
 body {
     min-width: 100vh;
-    background-color: seagreen;
     font-family: 'Open Sans', sans-serif;
 }
+/* ! =======HEADER STYLES========================= */
+header {
+
+}
+.logo_box {
+
+
+}
+.logo_img {
+
+}
+nav {
+
+}
+.nav_list {
+
+}
+.list_item {
+
+}
+.list_item_link {
+    
+}
+
+
+
+
+
+
+/* ! =======HEADER STYLES========================= */
+/* ! =======HEADER STYLES========================= */
+/* ! =======HEADER STYLES========================= */
+/* ! =======HEADER STYLES========================= */
+/* ! =======HEADER STYLES========================= */
