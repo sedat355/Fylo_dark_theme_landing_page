@@ -149,7 +149,6 @@ section.features {
 @media (min-width: 50rem) {
     section.features {
         grid-template-columns: 1fr 1fr;
-
     }
 }
 
