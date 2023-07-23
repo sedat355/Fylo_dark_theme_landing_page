@@ -259,6 +259,11 @@ section.comments {
     }
 }
 
+/* ! =======FOOTER STYLES========================= */
+footer {
+    background-color: var(--bg-header2);
+    padding: 4em 0;
+}
 
 
 
@@ -276,4 +281,5 @@ section.comments {
 
 
 
+/* ! =======HEADER STYLES========================= */
 /* ! =======HEADER STYLES========================= */
