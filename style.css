@@ -12,6 +12,7 @@
     --bg-main2: hsl(215, 66%, 15%);
     --bg-footer: hsl(216, 53%, 9%);
     --bg-testimonials: hsl(219, 30%, 18%);
+    --bg-testimonials2: rgb(37, 54, 87);
 
     --cyan: hsl(176, 68%, 64%);
     --blue: hsl(198, 60%, 50%);
@@ -49,14 +50,16 @@ p {
 img {
     max-width: 80%;
 }
-img:not(.logo_img) {
+/* img:not(.logo_img), 
+img:not(.profile_img) {
     margin-bottom: 20px;
-}
+} */
 body {
     min-width: 100vh;
     min-width: 100vw;
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke;
+    line-height: 1.5;
 }
 .container {
     max-width: 64rem;
@@ -206,6 +209,55 @@ section.productive {
     }
 }
 
+/* ! =======SECTION COMMENTS STYLES========================= */
+section.comments {
+    display: grid;
+    gap: 20px;
+    position: relative;
+}
+.quote_img {
+    position: absolute;
+}
+.comment_box {
+    display: grid;
+    grid-template-columns: 60px 3fr;
+    grid-template-areas: 
+        "parag   parag"
+        "image  info"    
+    ;
+    row-gap: 2em;
+    align-items: center;;
+    background-color: var(--bg-testimonials2);
+    padding: 2em 1em;
+    max-width: 380px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+.comment_parag {
+    grid-area: parag;
+}
+.profile_img {
+    grid-area: image;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    align-self: center;
+}
+.info {
+    grid-area: info;
+}
+.name {
+    display: block;
+    font-size: 16px;
+}
+.job_info {
+    font-size: 12px;
+}
+@media (min-width: 40rem) {
+    section.comments {
+        grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
+    }
+}
 
 
 
@@ -224,5 +276,4 @@ section.productive {
 
 
 
-/* ! =======HEADER STYLES========================= */
 /* ! =======HEADER STYLES========================= */
