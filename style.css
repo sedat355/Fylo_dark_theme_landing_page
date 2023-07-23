@@ -50,10 +50,6 @@ p {
 img {
     max-width: 80%;
 }
-/* img:not(.logo_img), 
-img:not(.profile_img) {
-    margin-bottom: 20px;
-} */
 body {
     min-width: 100vh;
     min-width: 100vw;
@@ -71,7 +67,6 @@ body {
     align-items: center;
 }
 section {
-    /* margin: 48px 0; */
     padding: 4em 0;
 }
 /* ! =======HEADER STYLES========================= */
@@ -130,6 +125,9 @@ section.hero {
 .hero > p {
     max-width: 50ch;
 }
+.image_box {
+    margin-bottom: 30px;
+}
 /* ! =======FEATURES STYLES========================= */
 section.features {
     display: grid;
@@ -140,10 +138,6 @@ section.features {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.feature_title {
-}
-.feature > img {
 }
 .feature_parag {
     max-width: 40ch;
@@ -189,6 +183,7 @@ section.productive {
 }
 .productive > img {
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 .productive_info {
     padding-right: 1em;
@@ -263,7 +258,87 @@ section.comments {
 footer {
     background-color: var(--bg-header2);
     padding: 4em 0;
+    color: rgba(245, 245, 245, 0.701);
 }
+footer > .container {
+    display: grid;
+    row-gap: 40px;;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    align-items: start;
+    column-gap: 20px;
+}
+.location > img {
+    margin-top: 5px;
+}
+.location > p {
+    max-width: 35ch;
+}
+.contact {
+    flex-direction: column;
+    row-gap: 10px;
+}
+.contact img {
+    margin-right: 10px;
+}
+.links {
+    display: flex;
+    column-gap: 40px;
+    margin-left: 40px;
+}
+.links a {
+    color: inherit;
+}
+.social_icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+
+}
+.social_icons > a {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+@media (min-width: 40rem) {
+    footer > .container {
+        grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+        column-gap: 20px;
+    }
+    .footer_logo {
+        grid-column: 1 / -1;
+    }
+    .location {
+    }
+    .contact {
+        justify-self: start;
+    }
+    .social_icons {
+        justify-self: start;
+        align-items: start;
+    }
+    .social_icons > a {
+        font-size: 1rem;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 0px;
+        color: whitesmoke;
+    }
+}
+@media (min-width: 789px) {
+    .links {
+        margin-left: 0px;  
+    }
+  }
 
 
 
