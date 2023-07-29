@@ -1,4 +1,4 @@
-### <a href="fylo-dark-theme-landing-page355.netlify.app">Open in netlify</a>
+### <a href="https://fylo-dark-theme-landing-page355.netlify.app">Open in netlify</a>
 
 # Frontend Mentor - Fylo dark theme landing page
 
